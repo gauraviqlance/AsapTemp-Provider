@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/linearMainJobs"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/bg_rounded_rect_orange_transparent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_rounded_rect_white_with_shadow"
     android:orientation="vertical"
     android:padding="@dimen/_8sdp">
 
@@ -16,8 +17,7 @@
         android:orientation="horizontal"
         android:weightSum="1">
 
-
-        <com.iqlance.asaptemp.provider.utils.CustomTextView
+        <com.asaptemp.provider.utils.CustomTextView
             android:id="@+id/txtUserName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -25,9 +25,10 @@
             android:text="Timothy F.Chandler"
             android:textColor="@color/colorPrimaryDark"
             android:textSize="@dimen/_14ssp"
+            android:textStyle="normal"
             app:font_name="poppins_bold" />
 
-        <com.iqlance.asaptemp.provider.utils.CustomTextView
+        <com.asaptemp.provider.utils.CustomTextView
             android:id="@+id/txtUserTimeAgo"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
@@ -48,7 +49,7 @@
         android:layout_marginTop="@dimen/_5sdp"
         android:orientation="vertical">
 
-        <com.iqlance.asaptemp.provider.utils.CustomTextView
+        <com.asaptemp.provider.utils.CustomTextView
             android:id="@+id/txtServiceName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -58,7 +59,7 @@
             android:textSize="@dimen/_12ssp"
             app:font_name="poppins_semi_bold" />
 
-        <com.iqlance.asaptemp.provider.utils.CustomTextView
+        <com.asaptemp.provider.utils.CustomTextView
             android:id="@+id/txtJobDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -81,7 +82,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <com.iqlance.asaptemp.provider.utils.CustomTextView
+        <com.asaptemp.provider.utils.CustomTextView
             android:id="@+id/txtJobDate"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -90,7 +91,7 @@
             android:textSize="@dimen/_8ssp"
             app:font_name="poppins_semi_bold" />
 
-        <com.iqlance.asaptemp.provider.utils.CustomTextView
+        <com.asaptemp.provider.utils.CustomTextView
             android:id="@+id/txtApproxTime"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -104,7 +105,7 @@
             android:textSize="@dimen/_8ssp"
             app:font_name="poppins_regular" />
 
-        <com.iqlance.asaptemp.provider.utils.CustomTextView
+        <com.asaptemp.provider.utils.CustomTextView
             android:id="@+id/txtJobAmount"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -127,7 +128,7 @@
         android:gravity="center_vertical"
         android:orientation="horizontal">
 
-        <com.iqlance.asaptemp.provider.utils.CustomTextView
+        <com.asaptemp.provider.utils.CustomTextView
             android:id="@+id/txtJobDistance"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -143,7 +144,7 @@
             android:layout_marginEnd="@dimen/_3sdp"
             android:background="@color/colorDarkGray" />
 
-        <com.iqlance.asaptemp.provider.utils.CustomTextView
+        <com.asaptemp.provider.utils.CustomTextView
             android:id="@+id/txtJobAddress"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

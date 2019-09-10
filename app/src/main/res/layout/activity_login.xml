@@ -9,11 +9,11 @@
 
 		<variable
 			name="tour"
-			type="com.iqlance.asaptemp.provider.tour.TourModel" />
+			type="com.asaptemp.provider.tour.TourModel" />
 
 		<variable
 			name="viewModel"
-			type="com.iqlance.asaptemp.provider.tour.viewmodels.TourViewModel" />
+			type="com.asaptemp.provider.tour.viewmodels.TourViewModel" />
 
 	</data>
 
