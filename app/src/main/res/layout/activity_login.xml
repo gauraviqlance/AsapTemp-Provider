@@ -27,34 +27,34 @@
 		android:descendantFocusability="beforeDescendants"
 		android:focusableInTouchMode="true" >
 
-		<TextView
+		<com.asaptemp.provider.utils.CustomTextView
 			android:id="@+id/lblStart"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_alignParentTop="true"
 			android:layout_marginTop="@dimen/_16sdp"
-			android:fontFamily="@font/poppins_semi_bold"
 			android:includeFontPadding="false"
 			android:letterSpacing="0"
 			android:lineSpacingExtra="@dimen/_0sdp"
 			android:text="@string/let_s_start_with"
 			android:textColor="@color/colorBlue"
 			android:textSize="@dimen/_20ssp"
-			android:textStyle="bold" />
+			android:textStyle="bold"
+			app:font_name="poppins_bold"/>
 
-		<TextView
+		<com.asaptemp.provider.utils.CustomTextView
 			android:id="@+id/lblStart1"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_below="@+id/lblStart"
-			android:fontFamily="@font/poppins_semi_bold"
 			android:includeFontPadding="false"
 			android:letterSpacing="0"
 			android:lineSpacingExtra="@dimen/_0sdp"
 			android:text="@string/login_explanation"
 			android:textColor="@color/colorBlue"
 			android:textSize="@dimen/_20ssp"
-			android:textStyle="bold" />
+			android:textStyle="bold"
+			app:font_name="poppins_bold"/>
 
 
 		<LinearLayout
@@ -75,14 +75,13 @@
 				android:theme="@style/TextLabel"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginTop="8dp"
-				>
+				android:layout_marginTop="8dp">
 
-				<com.google.android.material.textfield.TextInputEditText
+				<com.asaptemp.provider.utils.CustomEditText
 					android:id="@+id/edtEmailAddressLogin"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:fontFamily="@font/poppins_medium"
+					app:font_name="poppins_medium"
 					android:hint="@string/email_address"
 					android:imeOptions="actionNext"
 					android:includeFontPadding="false"
@@ -102,12 +101,12 @@
 				android:layout_marginTop="@dimen/_5sdp"
 				android:theme="@style/TextLabel">
 
-				<com.google.android.material.textfield.TextInputEditText
+				<com.asaptemp.provider.utils.CustomEditText
 					android:id="@+id/edtPasswordLogin"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:layout_marginTop="@dimen/_20sdp"
-					android:fontFamily="@font/poppins_medium"
+					app:font_name="poppins_medium"
 					android:hint="@string/password"
 					android:imeOptions="actionDone"
 					android:includeFontPadding="false"
@@ -138,12 +137,11 @@
 					android:visibility="gone" />
 
 
-				<Button
+				<com.asaptemp.provider.utils.CustomButton
 					android:id="@+id/btnLogin"
 					android:layout_width="match_parent"
 					android:layout_height="@dimen/_40sdp"
 					android:background="@drawable/bg_rounded_rect_orange"
-					android:fontFamily="@font/poppins_bold"
 					android:includeFontPadding="false"
 					android:letterSpacing="0.1"
 					android:lineSpacingExtra="@dimen/_0sdp"
@@ -151,7 +149,8 @@
 					android:textAllCaps="true"
 					android:textColor="@color/colorWhite"
 					android:textSize="@dimen/_16ssp"
-					android:textStyle="bold" />
+					android:textStyle="bold"
+					app:font_name="poppins_regular"/>
 
 			</RelativeLayout>
 
@@ -170,18 +169,18 @@
 					android:layout_height="@dimen/_20sdp"
 					android:layout_marginStart="@dimen/_5sdp"
 					android:contentDescription="@string/login_with_facebook"
-					android:src="@drawable/ic_fb" />
+					app:srcCompat="@drawable/ic_fb" />
 
-				<TextView
+				<com.asaptemp.provider.utils.CustomTextView
 					android:id="@+id/lblFacebook"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="@dimen/_5sdp"
-					android:fontFamily="@font/poppins_medium"
 					android:text="@string/login_with_facebook"
 					android:textColor="@color/colorFacebook"
 					android:textSize="@dimen/_7ssp"
-					android:textStyle="normal" />
+					android:textStyle="normal"
+					app:font_name="poppins_regular"/>
 
 				<ImageView
 					android:id="@+id/imgTwitter"
@@ -189,22 +188,22 @@
 					android:layout_height="@dimen/_20sdp"
 					android:layout_marginStart="@dimen/_15sdp"
 					android:contentDescription="@string/login_with_facebook"
-					android:src="@drawable/ic_twitter" />
+					app:srcCompat="@drawable/ic_twitter" />
 
 
-				<TextView
+				<com.asaptemp.provider.utils.CustomTextView
 					android:id="@+id/lblTwitter"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="@dimen/_5sdp"
-					android:fontFamily="@font/poppins_medium"
 					android:includeFontPadding="false"
 					android:letterSpacing="0.1"
 					android:lineSpacingExtra="@dimen/_0sdp"
 					android:text="@string/login_with_twitter"
 					android:textColor="@color/colorTwitter"
 					android:textSize="@dimen/_7ssp"
-					android:textStyle="normal" />
+					android:textStyle="normal"
+					app:font_name="poppins_regular"/>
 
 
 			</LinearLayout>
@@ -213,7 +212,7 @@
 		</LinearLayout>
 
 
-		<TextView
+		<com.asaptemp.provider.utils.CustomTextView
 			android:id="@+id/txtForgotPasswordLogin"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
@@ -222,14 +221,14 @@
 			android:layout_marginStart="@dimen/_8sdp"
 			android:layout_marginTop="@dimen/_30sdp"
 			android:layout_marginEnd="@dimen/_8sdp"
-			android:fontFamily="@font/poppins_medium"
 			android:includeFontPadding="false"
 			android:letterSpacing="0"
 			android:lineSpacingExtra="@dimen/_0sdp"
 			android:text="@string/forgot_password"
 			android:textColor="@color/colorAccent"
 			android:textSize="@dimen/_12ssp"
-			android:textStyle="normal" />
+			android:textStyle="normal"
+			app:font_name="poppins_bold"/>
 
 		<LinearLayout
 			android:id="@+id/linearSignUpLogin"
@@ -245,26 +244,25 @@
 			android:shadowDy="10"
 			android:shadowRadius="5">
 
-			<TextView
+			<com.asaptemp.provider.utils.CustomTextView
 				android:id="@+id/lblSignUpMsg"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
-				android:fontFamily="@font/poppins_bold"
 				android:includeFontPadding="false"
 				android:letterSpacing="0"
 				android:lineSpacingExtra="@dimen/_0sdp"
 				android:text="@string/don_t_have_an_account"
 				android:textColor="@color/colorLightGray"
 				android:textSize="@dimen/_10ssp"
-				android:textStyle="bold" />
+				android:textStyle="bold"
+				app:font_name="poppins_bold"/>
 
-			<TextView
+			<com.asaptemp.provider.utils.CustomTextView
 				android:id="@+id/lblSignUpMsg1"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginStart="@dimen/_5sdp"
 				android:layout_marginEnd="@dimen/_5sdp"
-				android:fontFamily="@font/poppins_medium"
 				android:gravity="start"
 				android:includeFontPadding="false"
 				android:letterSpacing="0"
@@ -272,7 +270,8 @@
 				android:text="@string/create_now"
 				android:textColor="@color/colorPrimary"
 				android:textSize="@dimen/_10ssp"
-				android:textStyle="normal" />
+				android:textStyle="normal"
+				app:font_name="poppins_medium"/>
 
 
 		</LinearLayout>

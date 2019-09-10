@@ -4,10 +4,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,8 +15,10 @@ import com.asaptemp.provider.forgotPassword.ForgotPasswordActivity;
 import com.asaptemp.provider.signUp.SignUpActivity;
 import com.asaptemp.provider.signUp.UserModel;
 import com.asaptemp.provider.utils.CommonUtils;
+import com.asaptemp.provider.utils.CustomButton;
+import com.asaptemp.provider.utils.CustomEditText;
+import com.asaptemp.provider.utils.CustomTextView;
 import com.asaptemp.provider.utils.Preference;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.Objects;
@@ -35,15 +35,15 @@ public class LoginActivity extends AppCompatActivity {
     @BindView(R.id.txtInputPasswordLogin)
     TextInputLayout txtInputPasswordLogin;
     @BindView(R.id.edtEmailAddressLogin)
-    TextInputEditText edtEmailAddressLogin;
+    CustomEditText edtEmailAddressLogin;
     @BindView(R.id.edtPasswordLogin)
-    TextInputEditText edtPasswordLogin;
+    CustomEditText edtPasswordLogin;
     @BindView(R.id.progressBarLogin)
     ProgressBar progressBarLogin;
     @BindView(R.id.btnLogin)
-    Button btnLogin;
+    CustomButton btnLogin;
     @BindView(R.id.txtForgotPasswordLogin)
-    TextView txtForgotPasswordLogin;
+    CustomTextView txtForgotPasswordLogin;
     private Preference preference;
 
     @Override

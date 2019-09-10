@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView
+<com.asaptemp.provider.utils.CustomTextView
 	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:id="@+id/tab"
 	android:layout_width="match_parent"
 	android:layout_height="wrap_content"
@@ -9,7 +10,8 @@
 	android:textAllCaps="true"
 	android:textColor="@drawable/custom_tab_text_color_selector"
 	android:textSize="@dimen/_13ssp"
-	android:fontFamily="@font/poppins_font_family"
 	android:includeFontPadding="false"
 	android:lineSpacingExtra="@dimen/_0sdp"
-	android:letterSpacing="0.1"/>
+	android:letterSpacing="0.1"
+	android:textStyle="normal"
+	app:font_name="poppins_regular" />

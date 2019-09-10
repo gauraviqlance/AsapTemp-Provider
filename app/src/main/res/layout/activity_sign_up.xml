@@ -3,43 +3,44 @@
 	xmlns:tools="http://schemas.android.com/tools"
 	android:layout_width="match_parent"
 	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
 	android:background="@drawable/bg_light"
 	android:paddingStart="@dimen/_16sdp"
 	android:paddingTop="@dimen/_0sdp"
 	android:paddingEnd="@dimen/_16sdp"
-	tools:context=".SignUpActivity"
+	tools:context=".signUp.SignUpActivity"
 	android:descendantFocusability="beforeDescendants"
-	android:focusableInTouchMode="true" >
+	android:focusableInTouchMode="true">
 
-	<TextView
+	<com.asaptemp.provider.utils.CustomTextView
 		android:id="@+id/lblStart"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginStart="@dimen/_0sdp"
 		android:layout_marginTop="32dp"
 		android:layout_marginEnd="@dimen/_0sdp"
-		android:fontFamily="@font/poppins_semi_bold"
 		android:includeFontPadding="false"
 		android:letterSpacing="0"
 		android:lineSpacingExtra="@dimen/_0sdp"
 		android:text="@string/let_s_start_with"
 		android:textColor="@color/colorBlue"
 		android:textSize="@dimen/_22ssp"
-		android:textStyle="normal" />
+		android:textStyle="normal"
+		app:font_name="poppins_semi_bold"/>
 
-	<TextView
+	<com.asaptemp.provider.utils.CustomTextView
 		android:id="@+id/lblStart1"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_below="@+id/lblStart"
-		android:fontFamily="@font/poppins_semi_bold"
 		android:includeFontPadding="false"
 		android:letterSpacing="0"
 		android:lineSpacingExtra="@dimen/_0sdp"
 		android:text="@string/register_explanation"
 		android:textColor="@color/colorBlue"
 		android:textSize="@dimen/_22ssp"
-		android:textStyle="normal" />
+		android:textStyle="normal"
+		app:font_name="poppins_semi_bold"/>
 
 
 	<ScrollView
@@ -69,12 +70,12 @@
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content">
 
-				<com.google.android.material.textfield.TextInputEditText
+				<com.asaptemp.provider.utils.CustomEditText
 					android:id="@+id/edtUserName"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
 					android:textSize="@dimen/_12ssp"
-					android:fontFamily="@font/poppins_medium"
+					app:font_name="poppins_medium"
 					android:includeFontPadding="false"
 					android:letterSpacing="0.1"
 					android:lineSpacingExtra="@dimen/_0sdp"
@@ -108,11 +109,11 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="@dimen/_10sdp">
 
-				<com.google.android.material.textfield.TextInputEditText
+				<com.asaptemp.provider.utils.CustomEditText
 					android:id="@+id/edtMobileNumber"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:fontFamily="@font/poppins_medium"
+					app:font_name="poppins_medium"
 					android:includeFontPadding="false"
 					android:letterSpacing="0.1"
 					android:textSize="@dimen/_12ssp"
@@ -131,11 +132,11 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="@dimen/_10sdp">
 
-				<com.google.android.material.textfield.TextInputEditText
+				<com.asaptemp.provider.utils.CustomEditText
 					android:id="@+id/edtEmailAddress"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:fontFamily="@font/poppins_medium"
+					app:font_name="poppins_medium"
 					android:includeFontPadding="false"
 					android:letterSpacing="0.1"
 					android:lineSpacingExtra="@dimen/_0sdp"
@@ -154,11 +155,11 @@
 				android:layout_height="wrap_content"
 				android:layout_marginTop="@dimen/_10sdp">
 
-				<com.google.android.material.textfield.TextInputEditText
+				<com.asaptemp.provider.utils.CustomEditText
 					android:id="@+id/edtPassword"
 					android:layout_width="match_parent"
 					android:layout_height="wrap_content"
-					android:fontFamily="@font/poppins_medium"
+					app:font_name="poppins_medium"
 					android:includeFontPadding="false"
 					android:letterSpacing="0.1"
 					android:lineSpacingExtra="@dimen/_0sdp"
@@ -183,12 +184,11 @@
 					android:visibility="gone" />
 
 
-				<Button
+				<com.asaptemp.provider.utils.CustomButton
 					android:id="@+id/btnSignUp"
 					android:layout_width="match_parent"
 					android:layout_height="@dimen/_40sdp"
 					android:background="@drawable/bg_rounded_rect_orange"
-					android:fontFamily="@font/poppins_bold"
 					android:includeFontPadding="false"
 					android:letterSpacing="0.1"
 					android:lineSpacingExtra="@dimen/_0sdp"
@@ -196,20 +196,21 @@
 					android:textAllCaps="true"
 					android:textColor="@color/colorWhite"
 					android:textSize="@dimen/_16ssp"
-					android:textStyle="bold" />
+					android:textStyle="bold"
+					app:font_name="poppins_regular"/>
 
 			</RelativeLayout>
 
-			<TextView
+			<com.asaptemp.provider.utils.CustomTextView
 				android:id="@+id/lblRegisterMsg1"
 				android:layout_width="wrap_content"
 				android:layout_height="wrap_content"
 				android:layout_marginTop="@dimen/_10sdp"
-				android:fontFamily="@font/poppins_font_family"
 				android:text="By clicking the Register button, you agree to our"
 				android:textColor="@color/colorLightGray"
 				android:textSize="@dimen/_9ssp"
-				android:textStyle="normal" />
+				android:textStyle="normal"
+				app:font_name="poppins_regular"/>
 
 			<LinearLayout
 				android:layout_width="match_parent"
@@ -219,37 +220,37 @@
 				android:gravity="center"
 				android:orientation="horizontal">
 
-				<TextView
+				<com.asaptemp.provider.utils.CustomTextView
 					android:id="@+id/txtTerms"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:fontFamily="@font/poppins_font_family"
 					android:text="@string/terms_conditions"
 					android:textColor="@color/colorPrimary"
 					android:textSize="@dimen/_9ssp"
-					android:textStyle="normal" />
+					android:textStyle="normal"
+					app:font_name="poppins_regular"/>
 
-				<TextView
+				<com.asaptemp.provider.utils.CustomTextView
 					android:id="@+id/lblAnd"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
 					android:layout_marginStart="@dimen/_5sdp"
 					android:layout_marginEnd="@dimen/_5sdp"
-					android:fontFamily="@font/poppins_font_family"
 					android:text="@string/and"
 					android:textColor="@color/colorLightGray"
 					android:textSize="@dimen/_9ssp"
-					android:textStyle="normal" />
+					android:textStyle="normal"
+					app:font_name="poppins_regular"/>
 
-				<TextView
+				<com.asaptemp.provider.utils.CustomTextView
 					android:id="@+id/txtPrivacy"
 					android:layout_width="wrap_content"
 					android:layout_height="wrap_content"
-					android:fontFamily="@font/poppins_font_family"
 					android:text="@string/privacy_policy"
 					android:textColor="@color/colorPrimary"
 					android:textSize="@dimen/_9ssp"
-					android:textStyle="normal" />
+					android:textStyle="normal"
+					app:font_name="poppins_regular"/>
 
 			</LinearLayout>
 
@@ -271,23 +272,22 @@
 		android:minHeight="@dimen/_60sdp"
 		android:orientation="horizontal">
 
-		<TextView
+		<com.asaptemp.provider.utils.CustomTextView
 			android:id="@+id/lblLoginMsg"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
-			android:fontFamily="@font/poppins_medium"
 			android:text="@string/already_have_an_account"
 			android:textColor="@color/colorLightGray"
 			android:textSize="@dimen/_13ssp"
-			android:textStyle="normal" />
+			android:textStyle="normal"
+			app:font_name="poppins_medium"/>
 
-		<TextView
+		<com.asaptemp.provider.utils.CustomTextView
 			android:id="@+id/lblLoginMsg1"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
 			android:layout_marginStart="@dimen/_5sdp"
 			android:layout_marginEnd="@dimen/_5sdp"
-			android:fontFamily="@font/poppins_medium"
 			android:includeFontPadding="false"
 			android:letterSpacing="0"
 			android:lineSpacingExtra="@dimen/_0sdp"
@@ -295,7 +295,8 @@
 			android:text="@string/login"
 			android:textColor="@color/colorPrimary"
 			android:textSize="@dimen/_13ssp"
-			android:textStyle="normal" />
+			android:textStyle="normal"
+			app:font_name="poppins_medium"/>
 
 	</LinearLayout>
 

@@ -1,9 +1,9 @@
 package com.asaptemp.provider.tour.viewmodels;
 
-import android.app.Activity;
 import android.content.Intent;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.BaseObservable;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
@@ -14,13 +14,13 @@ import com.asaptemp.provider.tour.TourModel;
 
 
 public class TourViewModel extends BaseObservable {
-    private Activity activity;
+    private AppCompatActivity activity;
     private TourModel tourModel;
     private int currentPage =0;
 
     /* ------------------------------ Constructor */
 
-    public TourViewModel(@NonNull Activity activity) {
+    public TourViewModel(@NonNull AppCompatActivity activity) {
         this.activity = activity;
         tourModel = tourModel = new TourModel(R.drawable.tour_screen_icon_1,activity.getResources().getString(R.string.tour_title_1),activity.getResources().getString(R.string.tour_msg_1));
 

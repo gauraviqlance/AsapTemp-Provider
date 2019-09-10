@@ -11,11 +11,11 @@ public class TypeFactory {
     public static Typeface poppinsSemiBold;
     public static Typeface poppinsBlack;
 
-    private static String POPPINS_REGULAR = "fonts/poppins_regular.ttf";
-    private static String POPPINS_MEDIUM = "fonts/poppins_medium.ttf";
-    private static String POPPINS_BOLD = "fonts/poppins_bold.ttf";
-    private static String POPPINS_SEMI_BOLD = "fonts/poppins_semi_bold.ttf";
-    private static String POPPINS_BLACK  = "fonts/poppins_black.ttf";
+    private static String POPPINS_REGULAR = "font/poppins_regular.ttf";
+    private static String POPPINS_MEDIUM = "font/poppins_medium.ttf";
+    private static String POPPINS_BOLD = "font/poppins_bold.ttf";
+    private static String POPPINS_SEMI_BOLD = "font/poppins_semi_bold.ttf";
+    private static String POPPINS_BLACK  = "font/poppins_black.ttf";
 
     public TypeFactory(Context context) {
         poppinsRegular= Typeface.createFromAsset(context.getAssets(), POPPINS_REGULAR);

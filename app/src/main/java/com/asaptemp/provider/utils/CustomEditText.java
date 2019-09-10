@@ -6,11 +6,10 @@ import android.graphics.Typeface;
 import android.util.AttributeSet;
 import android.view.KeyEvent;
 
-import androidx.appcompat.widget.AppCompatEditText;
-
 import com.asaptemp.provider.R;
+import com.google.android.material.textfield.TextInputEditText;
 
-public class CustomEditText extends AppCompatEditText {
+public class CustomEditText extends TextInputEditText {
 
     OnKeyboardDownListener mListener;
     private TypeFactory mFontFactory;
@@ -36,11 +35,11 @@ public class CustomEditText extends AppCompatEditText {
 
         TypedArray array = context.getTheme().obtainStyledAttributes(
                 attrs,
-                R.styleable.CustomTextView,
+                R.styleable.CustomFontName,
                 0, 0);
         int typefaceType;
         try {
-            typefaceType = array.getInteger(R.styleable.CustomTextView_font_name, 0);
+            typefaceType = array.getInteger(R.styleable.CustomFontName_font_name, 0);
         } finally {
             array.recycle();
         }

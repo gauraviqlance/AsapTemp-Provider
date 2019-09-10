@@ -4,7 +4,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
-import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 
@@ -14,8 +13,9 @@ import com.asaptemp.provider.MainActivity;
 import com.asaptemp.provider.R;
 import com.asaptemp.provider.login.LoginActivity;
 import com.asaptemp.provider.utils.CommonUtils;
+import com.asaptemp.provider.utils.CustomButton;
+import com.asaptemp.provider.utils.CustomEditText;
 import com.asaptemp.provider.utils.Preference;
-import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 
 import butterknife.BindView;
@@ -30,7 +30,7 @@ public class SignUpActivity extends AppCompatActivity {
     LinearLayout linearLogin;
 
     @BindView(R.id.btnSignUp)
-    Button btnSignUp;
+    CustomButton btnSignUp;
 
     @BindView(R.id.txtInputUserName)
     TextInputLayout txtInputUserName;
@@ -42,13 +42,13 @@ public class SignUpActivity extends AppCompatActivity {
     TextInputLayout txtInputPassword;
 
     @BindView(R.id.edtUserName)
-    TextInputEditText edtUserName;
+    CustomEditText edtUserName;
     @BindView(R.id.edtMobileNumber)
-    TextInputEditText edtMobileNumber;
+    CustomEditText edtMobileNumber;
     @BindView(R.id.edtEmailAddress)
-    TextInputEditText edtEmailAddress;
+    CustomEditText edtEmailAddress;
     @BindView(R.id.edtPassword)
-    TextInputEditText edtPassword;
+    CustomEditText edtPassword;
     @BindView(R.id.progressBarSignUp)
     ProgressBar progressBarSignUp;
 

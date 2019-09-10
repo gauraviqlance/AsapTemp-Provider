@@ -15,13 +15,11 @@ public class CustomTextView extends AppCompatTextView {
 
     public CustomTextView(Context context, AttributeSet attrs) {
         super(context, attrs);
-
         applyCustomFont(context, attrs);
     }
 
     public CustomTextView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
-
         applyCustomFont(context, attrs);
     }
 
@@ -30,24 +28,23 @@ public class CustomTextView extends AppCompatTextView {
     }
 
     private void applyCustomFont(Context context, AttributeSet attrs) {
-        TypedArray array = context.getTheme().obtainStyledAttributes(
-                attrs, R.styleable.CustomTextView,
-                0, 0);
+        TypedArray array = context.getTheme()
+                .obtainStyledAttributes(attrs, R.styleable.CustomFontName, 0, 0);
         int typefaceType;
         try {
-            typefaceType = array.getInteger(R.styleable.CustomTextView_font_name, 0);
+            typefaceType = array.getInteger(R.styleable.CustomFontName_font_name, 0);
         } finally {
             array.recycle();
         }
         if (!isInEditMode()) {
-            setTypeface(getTypeFace(typefaceType));
+            setTypeface(getTypeFace(typefaceType,context));
         }
 
     }
 
-    public Typeface getTypeFace(int type) {
+    public Typeface getTypeFace(int type, Context context) {
         if (mFontFactory == null)
-            mFontFactory = new TypeFactory(getContext());
+            mFontFactory = new TypeFactory(context);
 
         switch (type) {
             case Constants.POPPINS_REGULAR:
@@ -68,6 +65,7 @@ public class CustomTextView extends AppCompatTextView {
         }
 
         return TypeFactory.poppinsRegular;
+
     }
 
 

@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -16,6 +15,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
 import com.asaptemp.provider.R;
+import com.asaptemp.provider.utils.CustomTextView;
 import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
@@ -78,11 +78,11 @@ public class JobFragment  extends Fragment{
     }
 
     private void setupTab() {
-        TextView tabOne = (TextView) LayoutInflater.from(context).inflate(R.layout.layout_custom_tab, null);
+        CustomTextView tabOne = (CustomTextView) LayoutInflater.from(context).inflate(R.layout.layout_custom_tab, null);
         tabOne.setText(context.getResources().getString(R.string.title_new));
         Objects.requireNonNull(tabsMyJobs.getTabAt(0)).setCustomView(tabOne);
 
-        TextView tabTwo = (TextView) LayoutInflater.from(context).inflate(R.layout.layout_custom_tab, null);
+        CustomTextView tabTwo = (CustomTextView) LayoutInflater.from(context).inflate(R.layout.layout_custom_tab, null);
         tabTwo.setText(context.getResources().getString(R.string.ongoing));
         Objects.requireNonNull(tabsMyJobs.getTabAt(1)).setCustomView(tabTwo);
 

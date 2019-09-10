@@ -8,10 +8,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.view.inputmethod.EditorInfo;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -20,7 +18,9 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 
 import com.asaptemp.provider.R;
 import com.asaptemp.provider.utils.CommonUtils;
-import com.google.android.material.textfield.TextInputEditText;
+import com.asaptemp.provider.utils.CustomButton;
+import com.asaptemp.provider.utils.CustomEditText;
+import com.asaptemp.provider.utils.CustomTextView;
 import com.google.android.material.textfield.TextInputLayout;
 
 import java.util.Objects;
@@ -41,19 +41,19 @@ public class ForgotPasswordActivity extends AppCompatActivity {
     TextInputLayout txtInputEmailAddressForgotPassword;
 
     @BindView(R.id.edtEmailAddressForgotPassword)
-    TextInputEditText edtEmailAddressForgotPassword;
+    CustomEditText edtEmailAddressForgotPassword;
 
     @BindView(R.id.progressBarForgot)
     ProgressBar progressBarForgot;
 
     @BindView(R.id.btnSendForgotPassword)
-    Button btnSendForgotPassword;
+    CustomButton btnSendForgotPassword;
 
 
     private View.OnClickListener onNavigationIconClickListener = view -> finish();
 
 
-    private TextInputEditText.OnEditorActionListener onEditorActionListener = (textView, i, keyEvent) -> {
+    private CustomEditText.OnEditorActionListener onEditorActionListener = (textView, i, keyEvent) -> {
         if (i == EditorInfo.IME_ACTION_DONE) {
             //Do your stuff here
 
@@ -121,8 +121,8 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         mBuilder.setView(mView);
 
         ImageView imgSuccess = mView.findViewById(R.id.imgSuccess);
-        TextView txtTitle = mView.findViewById(R.id.txtTitle);
-        TextView txtMsg = mView.findViewById(R.id.txtMsg);
+        CustomTextView txtTitle = mView.findViewById(R.id.txtTitle);
+        CustomTextView txtMsg = mView.findViewById(R.id.txtMsg);
 
         ConstraintLayout constraintLayout = mView.findViewById(R.id.constrainContinue);
         if (constraintLayout != null) {

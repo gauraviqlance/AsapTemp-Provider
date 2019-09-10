@@ -16,28 +16,27 @@
 		android:layout_width="@dimen/_70sdp"
 		android:layout_height="@dimen/_70sdp"
 		android:layout_marginTop="@dimen/_10sdp"
-		android:src="@drawable/ic_success"
+		app:srcCompat="@drawable/ic_success"
 		android:contentDescription="@string/success" />
 
-	<TextView
+	<com.asaptemp.provider.utils.CustomTextView
 		android:id="@+id/txtTitle"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="@dimen/_20sdp"
-		android:fontFamily="@font/poppins_semi_bold"
 		android:includeFontPadding="false"
 		android:letterSpacing="0"
 		android:lineSpacingExtra="@dimen/_0sdp"
 		android:text="@string/success_explanation"
 		android:textColor="@color/colorGreen"
+		app:font_name="poppins_regular"
 		android:textSize="@dimen/_24ssp" />
 
-	<TextView
+	<com.asaptemp.provider.utils.CustomTextView
 		android:id="@+id/txtMsg"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"
 		android:layout_marginTop="@dimen/_20sdp"
-		android:fontFamily="@font/poppins_regular"
 		android:includeFontPadding="false"
 		android:letterSpacing="0"
 		android:lineSpacingExtra="@dimen/_0sdp"
@@ -45,7 +44,8 @@
 		android:text="@string/your_password_has_been_sent_to_your_email_address"
 		android:textColor="@color/colorPrimaryDark"
 		android:textSize="@dimen/_13ssp"
-		android:textStyle="normal" />
+		android:textStyle="normal"
+		app:font_name="poppins_regular"/>
 
 
 	<androidx.constraintlayout.widget.ConstraintLayout
@@ -59,7 +59,7 @@
 		android:orientation="horizontal">
 
 
-		<TextView
+		<com.asaptemp.provider.utils.CustomTextView
 			android:id="@+id/txtContinue"
 			android:layout_width="wrap_content"
 			android:layout_height="wrap_content"
@@ -69,7 +69,6 @@
 			android:layout_marginEnd="@dimen/_0sdp"
 			android:layout_marginBottom="@dimen/_0sdp"
 			android:gravity="center"
-			android:fontFamily="@font/poppins_bold"
 			android:includeFontPadding="false"
 			android:letterSpacing="0.1"
 			android:lineSpacingExtra="@dimen/_0sdp"
@@ -78,6 +77,7 @@
 			android:textColor="@color/colorWhite"
 			android:textSize="@dimen/_14ssp"
 			android:textStyle="bold"
+			app:font_name="poppins_regular"
 			app:layout_constraintBottom_toBottomOf="parent"
 			app:layout_constraintEnd_toEndOf="parent"
 			app:layout_constraintHorizontal_bias="0.500"

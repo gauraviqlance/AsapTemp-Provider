@@ -1,7 +1,6 @@
 package com.asaptemp.provider.utils;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageInfo;
@@ -14,6 +13,8 @@ import android.view.ViewGroup;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.asaptemp.provider.signUp.UserModel;
 
@@ -39,8 +40,8 @@ public class Preference {
         return connectivityManager.getActiveNetworkInfo() != null && connectivityManager.getActiveNetworkInfo().isConnected();
     }
 
-    public static void hideKeyboardFrom(Activity activity) {
-        InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+    public static void hideKeyboardFrom(AppCompatActivity activity) {
+        InputMethodManager imm = (InputMethodManager) activity.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE);
         assert imm != null;
         if (imm.isActive() && activity.getCurrentFocus() != null) {
             if (activity.getCurrentFocus().getWindowToken() == null) return;
@@ -48,8 +49,8 @@ public class Preference {
         }
     }
 
-    public static void hideKeyboardView(View view, Activity activity) {
-        InputMethodManager inputMethodManager = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+    public static void hideKeyboardView(View view, AppCompatActivity activity) {
+        InputMethodManager inputMethodManager = (InputMethodManager) activity.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE);
         assert inputMethodManager != null;
         inputMethodManager.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }

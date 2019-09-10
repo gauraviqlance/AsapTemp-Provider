@@ -1,7 +1,6 @@
 package com.asaptemp.provider.utils;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.ActivityManager;
 import android.content.ActivityNotFoundException;
 import android.content.Context;
@@ -23,6 +22,7 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.graphics.drawable.DrawableCompat;
 
@@ -173,10 +173,10 @@ public class CommonUtils {
 
     }
 
-    public static void hideKeyboard(Activity activity) {
+    public static void hideKeyboard(AppCompatActivity activity) {
 
         try{
-            InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
+            InputMethodManager imm = (InputMethodManager) activity.getSystemService(AppCompatActivity.INPUT_METHOD_SERVICE);
             //Find the currently focused view, so we can grab the correct window token from it.
             View view = activity.getCurrentFocus();
             //If no view currently has focus, create a new one, just so we can grab a window token from it
@@ -532,7 +532,7 @@ public class CommonUtils {
         return m_wLanMacAdd;
     }*/
 
-    public static String printKeyHash(Activity context) {
+    public static String printKeyHash(AppCompatActivity context) {
         PackageInfo packageInfo;
         String key = null;
         try {
@@ -585,10 +585,10 @@ public class CommonUtils {
     }
 
     private static void requestPermission(Context context) {
-        if (ActivityCompat.shouldShowRequestPermissionRationale((Activity) context, Manifest.permission.CALL_PHONE)) {
+        if (ActivityCompat.shouldShowRequestPermissionRationale((AppCompatActivity) context, Manifest.permission.CALL_PHONE)) {
             Toast.makeText(context, "Please allow in App Settings for additional functionality.", Toast.LENGTH_LONG).show();
         } else {
-            ActivityCompat.requestPermissions((Activity) context, new String[]{Manifest.permission.CALL_PHONE}, PERMISSION_REQUEST_CODE);
+            ActivityCompat.requestPermissions((AppCompatActivity) context, new String[]{Manifest.permission.CALL_PHONE}, PERMISSION_REQUEST_CODE);
         }
     }
 }

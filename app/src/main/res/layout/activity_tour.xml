@@ -1,115 +1,115 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout android:layout_width="match_parent"
-	android:layout_height="match_parent"
-	xmlns:app="http://schemas.android.com/apk/res-auto"
-	xmlns:attrs="http://schemas.android.com/tools"
-	android:background="@drawable/bg_light"
-	xmlns:android="http://schemas.android.com/apk/res/android">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:attrs="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_light">
 
-	<androidx.viewpager.widget.ViewPager
-		android:id="@+id/viewPagerTour"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:layout_marginStart="@dimen/_0sdp"
-		android:layout_marginTop="@dimen/_0sdp"
-		android:layout_marginEnd="@dimen/_0sdp"
-		app:layout_behavior="@string/appbar_scrolling_view_behavior"
-		android:contentDescription="@string/tour"
-		android:src="@drawable/tour_screen_icon_1"
-		android:layout_above="@+id/linearLayout"/>
-
-
-	<LinearLayout
-		android:id="@+id/linearLayout"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:gravity="center"
-		android:orientation="vertical"
-		android:paddingBottom="@dimen/_20sdp"
-		android:layout_alignParentBottom="true">
-
-		<com.rd.PageIndicatorView
-			android:id="@+id/pageIndicatorView"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginBottom="@dimen/_10sdp"
-			app:dynamicCount="true"
-			app:piv_animationType="worm"
-			app:piv_interactiveAnimation="true"
-			app:piv_selectedColor="@color/colorPrimary"
-			app:piv_unselectedColor="@color/colorBlue"
-			app:piv_viewPager="@id/viewPagerTour"
-			attrs:piv_padding="@dimen/_12sdp"
-			attrs:piv_radius="@dimen/_8sdp" />
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPagerTour"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginStart="@dimen/_0sdp"
+        android:layout_marginTop="@dimen/_0sdp"
+        android:layout_marginEnd="@dimen/_0sdp"
+        android:contentDescription="@string/tour"
+        android:src="@drawable/tour_screen_icon_1"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
 
 
-		<androidx.constraintlayout.widget.ConstraintLayout
-			android:id="@+id/constrainContinue"
-			android:layout_width="match_parent"
-			android:layout_height="@dimen/_50sdp"
-			android:layout_marginStart="@dimen/_16sdp"
-			android:layout_marginTop="@dimen/_10sdp"
-			android:layout_marginEnd="@dimen/_16sdp"
-			android:background="@drawable/bg_rounded_rect_orange"
-			android:orientation="horizontal"
-			app:layout_constraintBottom_toBottomOf="parent"
-			app:layout_constraintEnd_toEndOf="parent"
-			app:layout_constraintHorizontal_bias="0.0"
-			app:layout_constraintStart_toStartOf="parent"
-			app:layout_constraintTop_toBottomOf="@+id/pageIndicatorView"
-			app:layout_constraintVertical_bias="0.387">
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/_20sdp">
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/pageIndicatorView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            app:dynamicCount="true"
+            app:piv_animationType="worm"
+            app:piv_interactiveAnimation="true"
+            app:piv_selectedColor="@color/colorPrimary"
+            app:piv_unselectedColor="@color/colorBlue"
+            app:piv_viewPager="@id/viewPagerTour"
+            attrs:piv_padding="@dimen/_12sdp"
+            attrs:piv_radius="@dimen/_8sdp" />
 
 
-			<TextView
-				android:id="@+id/txtLocation"
-				android:layout_width="wrap_content"
-				android:layout_height="wrap_content"
-				android:layout_gravity="center"
-				android:layout_marginStart="@dimen/_0sdp"
-				android:layout_marginTop="@dimen/_0sdp"
-				android:layout_marginEnd="@dimen/_0sdp"
-				android:layout_marginBottom="@dimen/_0sdp"
-				android:fontFamily="@font/poppins_bold"
-				android:includeFontPadding="false"
-				android:lineSpacingExtra="@dimen/_0sdp"
-				android:letterSpacing="0.1"
-				android:gravity="center"
-				android:text="@string/title_continue"
-				android:textAllCaps="true"
-				android:textColor="@color/colorWhite"
-				android:textSize="@dimen/_14ssp"
-				android:textStyle="bold"
-				app:layout_constraintBottom_toBottomOf="parent"
-				app:layout_constraintEnd_toEndOf="parent"
-				app:layout_constraintHorizontal_bias="0.500"
-				app:layout_constraintStart_toStartOf="parent"
-				app:layout_constraintTop_toTopOf="parent"
-				app:layout_constraintVertical_bias="0.384" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constrainContinue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/bg_rounded_rect_orange"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pageIndicatorView"
+            app:layout_constraintVertical_bias="0.387">
 
-			<ImageView
-				android:id="@+id/imgCircle"
-				android:layout_width="@dimen/_20sdp"
-				android:layout_height="@dimen/_20sdp"
-				android:layout_gravity="end"
-				android:layout_marginStart="@dimen/_50sdp"
-				android:layout_marginTop="@dimen/_0sdp"
-				android:layout_marginEnd="@dimen/_16sdp"
-				android:layout_marginBottom="@dimen/_0sdp"
-				android:background="@drawable/ic_btn_arrow"
-				android:contentDescription="@string/app_name"
-				android:scaleType="fitCenter"
-				app:layout_constraintBottom_toBottomOf="parent"
-				app:layout_constraintEnd_toEndOf="parent"
-				app:layout_constraintStart_toEndOf="@+id/txtLocation"
-				app:layout_constraintTop_toTopOf="parent" />
 
-		</androidx.constraintlayout.widget.ConstraintLayout>
+            <com.asaptemp.provider.utils.CustomTextView
+                android:id="@+id/txtLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_0sdp"
+                android:layout_marginTop="@dimen/_0sdp"
+                android:layout_marginEnd="@dimen/_0sdp"
+                android:layout_marginBottom="@dimen/_0sdp"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:letterSpacing="0.1"
+                android:lineSpacingExtra="@dimen/_0sdp"
+                android:text="@string/title_continue"
+                android:textAllCaps="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold"
+                app:font_name="poppins_bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.500"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.384" />
 
-	</LinearLayout>
+            <ImageView
+                android:id="@+id/imgCircle"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/_50sdp"
+                android:layout_marginTop="@dimen/_0sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_0sdp"
+                android:background="@drawable/ic_btn_arrow"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitCenter"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/txtLocation"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
 
 
 </RelativeLayout>
-<!--
+    <!--
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:attrs="http://schemas.android.com/apk/res-auto"
