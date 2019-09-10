@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:orientation="vertical">
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbarMyJobs"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme"
+		app:popupTheme="@style/AppTheme.PopupOverlay"
+		android:background="@color/colorPrimary"
+		android:visibility="gone">
+
+		<TextView
+			android:id="@+id/txtTitle"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:fontFamily="@font/poppins_bold"
+			android:includeFontPadding="false"
+			android:lineSpacingExtra="@dimen/_0sdp"
+			android:textAllCaps="true"
+			android:text="@string/jobs"
+			android:textStyle="bold"
+			android:textColor="@color/colorWhite"
+			android:textSize="@dimen/_12ssp"/>
+
+	</androidx.appcompat.widget.Toolbar>
+
+	<com.google.android.material.tabs.TabLayout
+		android:id="@+id/tabsMyJobs"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textAlignment="center"
+		app:tabTextColor="@color/colorAccent"
+		app:tabSelectedTextColor="@color/colorPrimary"
+		app:tabIndicatorColor="@color/colorPrimary"
+		app:tabMaxWidth="0dp"
+		app:tabMode="fixed"
+		app:tabGravity="fill"/>
+
+	<androidx.viewpager.widget.ViewPager
+		android:id="@+id/viewPagerMyJobs"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+</LinearLayout>

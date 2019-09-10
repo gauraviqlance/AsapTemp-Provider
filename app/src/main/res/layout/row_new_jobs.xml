@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearMainJobs"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_rounded_rect_orange_transparent"
+    android:orientation="vertical"
+    android:padding="@dimen/_8sdp">
+
+    <LinearLayout
+        android:id="@+id/linearUserInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <com.iqlance.asaptemp.provider.utils.CustomTextView
+            android:id="@+id/txtUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="Timothy F.Chandler"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_14ssp"
+            app:font_name="poppins_bold" />
+
+        <com.iqlance.asaptemp.provider.utils.CustomTextView
+            android:id="@+id/txtUserTimeAgo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="end|center_vertical"
+            android:text="30 min Ago"
+            android:textColor="@color/colorLightGray"
+            android:textSize="@dimen/_10ssp"
+            app:font_name="poppins_regular" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearJobDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:orientation="vertical">
+
+        <com.iqlance.asaptemp.provider.utils.CustomTextView
+            android:id="@+id/txtServiceName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="Leaser printer repair at home"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_12ssp"
+            app:font_name="poppins_semi_bold" />
+
+        <com.iqlance.asaptemp.provider.utils.CustomTextView
+            android:id="@+id/txtJobDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center_vertical"
+            android:text="Hp Leaser pJet Pro M126nw Multi-Function Monchrome Leaser printer"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/_8ssp"
+            app:font_name="poppins_regular" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearDateAndTimeJobs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.iqlance.asaptemp.provider.utils.CustomTextView
+            android:id="@+id/txtJobDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="8 January 2019"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_8ssp"
+            app:font_name="poppins_semi_bold" />
+
+        <com.iqlance.asaptemp.provider.utils.CustomTextView
+            android:id="@+id/txtApproxTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:drawableStart="@drawable/background_circle"
+            android:drawablePadding="@dimen/_6sdp"
+            android:gravity="center_vertical"
+            android:text="12:30PM - 15:30PM"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_8ssp"
+            app:font_name="poppins_regular" />
+
+        <com.iqlance.asaptemp.provider.utils.CustomTextView
+            android:id="@+id/txtJobAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/background_circle"
+            android:drawablePadding="@dimen/_6sdp"
+            android:gravity="center_vertical"
+            android:text="$ 25.00 - $ 30.00"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/_8ssp"
+            app:font_name="poppins_regular" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearJobAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.iqlance.asaptemp.provider.utils.CustomTextView
+            android:id="@+id/txtJobDistance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4.2 Kms"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/_8ssp"
+            app:font_name="poppins_regular" />
+
+        <View
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+            android:background="@color/colorDarkGray" />
+
+        <com.iqlance.asaptemp.provider.utils.CustomTextView
+            android:id="@+id/txtJobAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/ic_location"
+            android:drawablePadding="@dimen/_3sdp"
+            android:gravity="center_vertical"
+            android:text="4820 47 Ave , Beaumont, AB, T4x1G6"
+            android:textColor="@color/colorDarkGray"
+            android:textSize="@dimen/_8ssp"
+            app:font_name="poppins_regular" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f58634</color>
+    <color name="colorControlActivated">#f58634</color>
+    <color name="colorPrimaryDark">#212121</color>
+    <color name="colorAccent">#656565</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorDivider">#dfdfdf</color>
+    <color name="colorBlue">#2A569F</color>
+    <color name="colorGreen">#2ECC71</color>
+    <color name="colorGreenLight">#6ac259</color>
+    <color name="colorStarUnSelect">#ABABAB</color>
+
+
+    <color name="colorDarkGray">#555555</color>
+    <color name="colorLightGray">#bfbfbf</color>
+    <color name="colorDeactivate">#9B9B9B</color>
+    <color name="colorLightDivider">#6e6e6e</color>
+    <!--<color name="colorLightDivider">#E6E6E6</color>-->
+
+    <color name="colorFacebook">#3C5998</color>
+    <color name="colorTwitter">#1DA1F2</color>
+    <color name="colorTransParent">@android:color/transparent</color>
+
+    <!-- chat screen color-->
+    <color name="colorOrangeChat">#fef3ea</color>
+    <color name="colorGrayChat">#f7f5f6</color>
+    <color name="colorBottomChat">#f7f7f7</color>
+
+    <color name="dialogBg">#80ffffff</color>
+</resources>

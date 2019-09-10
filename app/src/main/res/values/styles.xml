@@ -1,0 +1,101 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:statusBarColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark" />
+
+
+    <style name="MyTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColorHint">@color/colorPrimary</item>
+        <item name="android:paddingStart">16dp</item>
+        <item name="android:paddingEnd">16dp</item>
+        <item name="boxStrokeColor">@color/text_input_box_stroke_selector</item>
+    </style>
+
+    <style name="MyTextInputEditText" parent="ThemeOverlay.MaterialComponents.TextInputEditText.OutlinedBox.Dense">
+        <item name="android:textColor">@android:color/black</item>
+    </style>
+    <style name="TextLabel" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorAccent</item>
+
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+
+        <item name="colorAccent">@color/colorPrimaryDark</item>
+        <item name="colorControlNormal">@color/colorPrimary</item>
+
+        <item name="colorControlActivated">@color/colorPrimary</item>
+    </style>
+    <style name="MyAppThemeInputEditText" parent="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorSecondary">@color/colorPrimary</item>
+
+    </style>
+
+    <!-- for FloatingWindow Transparent-->
+    <style name="AppThemeTransparentFloating" parent="android:style/Theme.Translucent">
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:background">@android:color/transparent</item>
+        <!--<item name="android:windowBackground">@color/colorWhite</item>-->
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <!--<item name="android:windowIsFloating">true</item>-->
+        <item name="android:backgroundDimEnabled">true</item>
+
+    </style>
+
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/colorWhite</item>
+    </style>
+
+    <!-- for searchView-->
+    <style name="SearchViewTheme" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:maxWidth">10000dp</item>
+        <item name="android:fontFamily">@font/poppins_font_family</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColorHint">@color/colorAccent</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- for Rating bar-->
+    <style name="customRatingBar" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="android:progressDrawable">@drawable/ratingstars</item>
+        <!--<item name="colorControlNormal">@color/colorLightGray</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>-->
+        <item name="android:minHeight">20dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="ForgotAlertTheme" parent="android:style/Theme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:windowBackground">@color/colorTransParent</item>
+        <!--<item name="android:background">#50FFFFFF</item>-->
+    </style>
+
+    <!-- Styles to be used for the exposed dropdown menu. -->
+   <!-- <style name="Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+        <item name="materialThemeOverlay">
+            @style/ThemeOverlay.MaterialComponents.AutoCompleteTextView.FilledBox
+        </item>
+        <item name="endIconMode">dropdown_menu</item>
+    </style>
+-->
+
+
+</resources>
